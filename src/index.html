@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>투표 결과</title>
+</head>
+
+<body>
+    <h1>투표 결과</h1>
+
+    <!-- 로딩바 -->
+    <div id="loader">
+        <p>로딩중...</p>
+    </div>
+
+    <div id="content" style="display: none;">
+
+        <!-- 투표결과 표시 -->
+        <table class="table" style="width: 100%">
+            <colgroup>
+                <col width="60">
+                <col width="*">
+                <col width="100">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">기호</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">득표수</th>
+                </tr>
+            </thead>
+            <tbody id="candidatesResults">
+            </tbody>
+        </table>
+        <hr>
+
+        <!-- 투표하기 -->
+        <h2>투표 참여</h2>
+        <select id="candidateSelect">
+            <option value="">후보작를 선택하세요.</option>
+        </select>
+        <button id="btnVote">투표하기</button>
+        <hr>
+
+        <!-- 계정 정보 표시 -->
+        <p id="accountAddress"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
