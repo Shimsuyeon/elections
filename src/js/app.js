@@ -1,4 +1,3 @@
-
 var App = {
     web3Provider: null,
     contracts: {}
@@ -16,6 +15,13 @@ $(window).load(function () {
         App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
         web3 = new Web3(App.web3Provider);
     }
+    
+    // wallet connection button
+    const ethereumButton = document.querySelector('.enableEthereumButton');
+    ethereumButton.addEventListener('click', () => {
+        //Will Start the metamask extension
+        ethereum.request({ method: 'eth_requestAccounts' });
+    });
 
     // Election.json을 가지고 온다.
     $.getJSON('Election.json', function (election) {
@@ -48,12 +54,12 @@ $(window).load(function () {
     function render() {
 
         // 계정 정보 읽어오기
-        web3.eth.getCoinbase(function (err, account) {
-            if (err === null) {
-                App.account = account;
-                $('#accountAddress').html('나의 계정: ' + App.account);
+        web3.eth.getAccounts( (error,accounts) => {
+            if (error) {
+                console.log(error);
             } else {
-                console.log(err);
+                App.account = accounts[0]
+                $('#accountAddress').html('나의 계정: ' + App.account);
             }
         });
 
