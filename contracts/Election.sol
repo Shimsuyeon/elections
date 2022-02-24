@@ -29,6 +29,7 @@ contract Election {
          addCandidate('KIM');
          addCandidate('LEE');
          addCandidate('PARK');
+         addCandidate('CHOI');
     }
 
     // 투표하기 Watch Event

@@ -5,49 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>투표 결과</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
+<header>
+    <img src="./GISTVOTE.png" height="65"/>
+    <nav>
+      <ul>
+        <li><button id="connect-btn" class="enableEthereumButton">지 갑 연 결</button>
+      </ul>
+    </nav>
+  </header>
 <body>
-    <h1>투표 결과</h1>
-
+    <br>
+<div class="back">
+    <div class="title">투표 현황</div>
+    <br>
     <!-- 로딩바 -->
     <div id="loader">
         <p>로딩중...</p>
     </div>
-    <button class="enableEthereumButton">Wallet Connect</button>
+
 
     <div id="content" style="display: none;">
 
         <!-- 투표결과 표시 -->
-        <table class="table" style="width: 100%">
-            <colgroup>
-                <col width="60">
-                <col width="*">
-                <col width="100">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th scope="col">기호</th>
-                    <th scope="col">이름</th>
-                    <th scope="col">득표수</th>
-                </tr>
-            </thead>
-            <tbody id="candidatesResults">
-            </tbody>
-        </table>
-        <hr>
-
+        <div class="title-area">
+            <table class="table" style="width: 100%">
+                <colgroup>
+                    <col width="60">
+                    <col width="*">
+                    <col width="100">
+                </colgroup>
+                    <thead class="result-title">
+                        <tr>
+                            <th scope="col" class="sub">기호</th>
+                            <th scope="col" class="sub">이름</th>
+                            <th scope="col" class="sub">득표수</th>
+                        </tr>
+                    </thead>
+                    <tbody id="candidatesResults" class="sub-result"></tbody>
+            </table>
+            <hr>
+        </div>
         <!-- 투표하기 -->
-        <h2>투표 참여</h2>
-        <select id="candidateSelect">
-            <option value="">후보작를 선택하세요.</option>
-        </select>
-        <button id="btnVote">투표하기</button>
-        <hr>
-
-        <!-- 계정 정보 표시 -->
-        <p id="accountAddress"></p>
+        <div class="join">
+            <h2 class="result">투표 참여</h2>
+            <select id="candidateSelect" class="vote-select">
+                <option value="">후보자를 선택하세요.</option>
+            </select>
+            <button id="btnVote" class="vote-btn">투표</button>
+            <hr>
+            <!-- 계정 정보 표시 -->
+            <p id="accountAddress" class="account"></p>
+        </div>
     </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/web3.min.js"></script>

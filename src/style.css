@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* body{
+    background-image: url("http://www.gist.ac.kr/kr/html/sub07/070103.html?mode=D&no=195442&file_id=52669");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+.title{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size:50pt;
+    text-align: center;
+}
+.title-area{
+    width: 800px;
+    text-align:center;
+    margin:auto;
+
+}
+.sub-result {
+    font-family: 'Pretendard-Regular';
+    font-size:13pt;
+    background-color: whitesmoke;
+}
+.sub {
+    font-family: 'Pretendard-Regular';
+    font-size:15pt;
+}
+
+.result {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30pt;
+}
+.result-title{
+    background-color: rgb(255, 174, 68);
+}
+.result-area{
+    width: 900px;
+    height:800px;
+    border: solid 2px #000000;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    background-color: gray;
+}
+.connect-btn{
+    background-color: rgb(255, 174, 68);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    height:30px;
+    font-family: 'Pretendard-Regular';
+    text-align: right;
+}
+.join {
+    width: 800px;
+    position:absolute; left:27%;
+    background-color: white;
+    
+}
+.account{
+    font-family: 'Pretendard-Regular';
+    font-size:15pt;
+}
+.enableEthereumButton {
+    font-family: 'Pretendard-Regular';
+    font-size:13pt;
+    height:25px;
+    outline: 0;
+    border:0;
+    background-color:rgb(255, 174, 68);
+    border-radius: 5px;
+}
+.enableEthereumButton:hover{
+    background-color: rgb(209, 128, 22);
+}
+.vote-select{
+    font-family: 'Pretendard-Regular';
+    font-size: 13pt;
+}
+.vote-btn{
+    background-color: rgb(255, 174, 68);
+    font-family: 'Pretendard-Regular';
+    font-size:15pt;
+    border:0;
+    outline:0;
+    height:25px;
+    border-radius: 5px;
+}
+.vote-btn:hover{
+    background-color: rgb(209, 128, 22);
+}
+
+
+
+
+
+
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    width:40px;
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+  
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li.icon {
+    flex-basis: 25%;
+  }
+  
+  header {
+    background: rgb(247, 247, 247);
+    padding: 5px;
+  }
+  
+  .a {
+    font-family: 'Pretendard-Regular';
+    font-size:15px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #ffaedd;
+
+  }
+  
+  .a:hover {
+    background: #ffaedd;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
